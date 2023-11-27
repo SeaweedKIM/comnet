@@ -27,7 +27,7 @@ def threaded_client(conn, player):
 
     # 새로운 플레이어가 접속할 때마다 players 리스트에 추가
     players.append(Player())
-    players[player].initialize(f"C:/Users/KIMJUNHO/source/repos/comnet2/player{player + 1}.png", 0, 0)
+    players[player].initialize(f"image address", 0, 0)
 
     conn.send(pickle.dumps(players[player].get_state()))
     reply = ""
