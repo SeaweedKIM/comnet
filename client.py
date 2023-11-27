@@ -89,7 +89,7 @@ win = pygame.display.set_mode((win_width, win_height))
 pygame.display.set_caption("피카츄 사냥")
 
 # BGM
-sound = pygame.mixer.Sound("C:/Users/KIMJUNHO/source/repos/comnet2/bgm.wav")
+sound = pygame.mixer.Sound("bgm address")
 sound.play()
 
 # 시간
@@ -99,14 +99,14 @@ total_time = 5
 start_ticks = pygame.time.get_ticks()
 
 # 배경 이미지
-background = pygame.image.load("C:/Users/KIMJUNHO/source/repos/comnet2/background.png")
+background = pygame.image.load("backgreound address")
 
 # 플레이어1 및 플레이어2 생성
 player1 = Player()
-player1.initialize("C:/Users/KIMJUNHO/source/repos/comnet2/player1.png", 0, 0)
+player1.initialize("image1 address", 0, 0)
 
 player2 = Player()
-player2.initialize("C:/Users/KIMJUNHO/source/repos/comnet2/player2.png", 450, 450)
+player2.initialize("image2 address", 450, 450)
 
 network=Network()
 
